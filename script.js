@@ -4,31 +4,41 @@ const grid = document.getElementById('translationGrid');
 const searchInput = document.getElementById('searchInput');
 
 let translations = []; 
+let currentCategory = "All";
 
-async function loadData() {
+// 1. Fetch Data (Supports individual files)
+async function loadData(category = "All") {
+    currentCategory = category;
+    grid.innerHTML = "<p class='loading'>読み込み中...</p>";
+    
     try {
-        // Adding './' tells the browser: "Look in the exact same folder as index.html"
-        const response = await fetch('./data.json'); 
-        if (!response.ok) throw new Error(`Status: ${response.status}`);
+        // If "All", we load the original master data.json, otherwise load from /data/
+        const path = (category === "All") ? './data.json' : `./data/${category.toLowerCase()}.json`;
+        
+        const response = await fetch(path);
+        if (!response.ok) throw new Error(`Could not load ${path}`);
+        
         translations = await response.json();
-        displayTranslations(); 
-        console.log("Data loaded successfully!");
+        displayTranslations(""); 
     } catch (error) {
         console.error("Fetch Error:", error);
-        grid.innerHTML = `<p style="color:red;">404: data.json not found in this directory.</p>`;
+        grid.innerHTML = `<p style="color:red; padding:20px;">エラー: ${category} のデータを読み込めませんでした。</p>`;
     }
 }
 
-// 2. Display Cards
-function displayTranslations(filter = "", category = "All") {
+// 2. Display Logic
+function displayTranslations(searchTerm = "") {
     grid.innerHTML = "";
     
     const filtered = translations.filter(item => {
-        const matchesSearch = item.jp.includes(filter) || 
-                              item.en.toLowerCase().includes(filter.toLowerCase());
-        const matchesCategory = category === "All" || item.tag === category;
-        return matchesSearch && matchesCategory;
+        return item.jp.includes(searchTerm) || 
+               item.en.toLowerCase().includes(searchTerm.toLowerCase());
     });
+
+    if (filtered.length === 0) {
+        grid.innerHTML = "<p class='no-results'>見つかりませんでした。リクエストしてください！</p>";
+        return;
+    }
 
     filtered.forEach(item => {
         const card = document.createElement('div');
@@ -45,29 +55,24 @@ function displayTranslations(filter = "", category = "All") {
     });
 }
 
-// 3. Event Listeners (Fixes CSP errors)
-
-// Theme Toggle
+// 3. Event Listeners
 themeToggle.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
     localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
 });
 
-// Category Filtering
 document.querySelectorAll('.filter-btn').forEach(btn => {
     btn.addEventListener('click', () => {
         const tag = btn.getAttribute('data-tag');
         searchInput.value = "";
-        displayTranslations("", tag);
+        loadData(tag);
     });
 });
 
-// Search
 searchInput.addEventListener('input', (e) => {
     displayTranslations(e.target.value);
 });
 
-// Copy logic (Event Delegation)
 grid.addEventListener('click', (e) => {
     if (e.target.classList.contains('copy-btn')) {
         const text = e.target.getAttribute('data-text');
@@ -81,4 +86,4 @@ grid.addEventListener('click', (e) => {
 
 // Initialize
 if (localStorage.getItem('theme') === 'dark') body.classList.add('dark-mode');
-loadData();
+loadData("All");
