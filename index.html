@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>英換 Ei-Kan | ヘル英 Heru-E</title>
+    <title>英換 Ei-Kan | 英語に変換！</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="theme-toggle-container">
+        <button id="themeToggle" aria-label="Toggle Dark Mode">🌓</button>
+    </div>
+    
     <header>
         <div class="brand-container">
-            <h1 class="logo">英換 <span class="sub">Ei-Kan</span></h1>
-            <p class="tagline">by ヘル英 (Heru-E) - 現場のための英語変換</p>
+            <h1 class="logo">英換</h1>
+            <p class="tagline">あれもこれも英語に変換しよう！</p>
         </div>
         
         <div class="search-container">
@@ -18,19 +22,18 @@
         </div>
         
         <div class="quick-tags">
-            <button onclick="filterTag('All')">すべて</button>
-            <button onclick="filterTag('Menu')">🍴 飲食</button>
-            <button onclick="filterTag('Sign')">⚠️ 注意</button>
-            <button onclick="filterTag('Pay')">💳 会計</button>
-            <button onclick="filterTag('Hotel')">🏨 宿泊</button>
+            <button class="filter-btn" data-tag="All">すべて</button>
+            <button class="filter-btn" data-tag="Menu">🍴 飲食</button>
+            <button class="filter-btn" data-tag="Sign">⚠️ 注意</button>
+            <button class="filter-btn" data-tag="Pay">💳 会計</button>
+            <button class="filter-btn" data-tag="Hotel">🏨 宿泊</button>
         </div>
     </header>
 
-    <main id="translationGrid">
-        </main>
+    <main id="translationGrid"></main>
 
     <footer>
-        <p>© 2026 ヘル英 Project - Making Japan International</p>
+        <p>© 2026 EIKAN Project - Making Japan International</p>
     </footer>
 
     <script src="script.js"></script>
