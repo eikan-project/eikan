@@ -31,15 +31,31 @@ def get_smart_keywords(jp, en):
         print(f"Error processing {jp}: {e}")
         return ""
 
-# 2. Load your file (Change 'menu.json' to whatever file you are working on)
-target_file = 'data/menu.json'
+data_folder = 'data/'
+# Get all json files except index or data.json if you have them
+json_files = [f for f in os.listdir(data_folder) if f.endswith('.json')]
 
-if not os.path.exists(target_file):
-    print(f"Error: {target_file} not found. Make sure the 'data' folder exists.")
-    exit()
+for file_name in json_files:
+    target_path = os.path.join(data_folder, file_name)
+    print(f"--- Processing: {file_name} ---")
+    
+    with open(target_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
 
-with open(target_file, 'r', encoding='utf-8') as f:
-    data = json.load(f)
+    for i, item in enumerate(data):
+        # 1. Add 'verified' field if missing
+        if "verified" not in item:
+            item["verified"] = False
+            
+        # 2. Process Keywords
+        if "keywords" not in item or not item["keywords"]:
+            print(f"[{i+1}/{len(data)}] Generating keywords for: {item['jp']}")
+            item['keywords'] = get_smart_keywords(item['jp'], item['en'])
+            time.sleep(2) # Rate limit protection
+
+    # Save the updated file
+    with open(target_path, 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
 
 # 3. Process Loop
 print(f"Starting AI keyword generation for {len(data)} items...")

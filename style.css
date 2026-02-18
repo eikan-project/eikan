@@ -1,3 +1,11 @@
+/* Card header row for jp-text and kebab menu */
+.card-header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 2px;
+}
 :root {
     /* Light Mode Palette */
     --bg: #fcfcfc;
@@ -222,4 +230,199 @@ footer {
     background: var(--accent);
     color: white;
     border-color: var(--accent);
+}
+
+/* --- Kebab Menu & Verified UI --- */
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+
+
+/* --- Restored Typography --- */
+.jp {
+    font-size: 0.95rem;
+    color: var(--accent); /* This is your Light Blue (#3498db) */
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.en {
+    font-size: 1.4rem;
+    color: var(--primary); /* This is your Deep Indigo (#2c3e50) */
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+/* --- Card Header Adjustment --- */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Changed from flex-start to center for better alignment */
+    min-height: 24px;
+    margin-bottom: 15px;
+}
+
+/* Ensure the Genre/Tag is hidden if it exists in the HTML */
+.tag {
+    display: none;
+}
+
+.translation-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 14px 12px 14px;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-height: unset;
+}
+
+.card-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+
+/* Card Japanese text: blue */
+.jp-text {
+    font-size: 1rem;
+    color: var(--accent);
+    font-weight: 700;
+    margin: 0 0 4px 0;
+}
+
+.en-text {
+    font-size: 1.15rem;
+    color: var(--primary);
+    font-weight: 700;
+    margin: 4px 0 4px 0;
+    line-height: 1.25;
+}
+
+/* Card context: dark grey */
+.context-text {
+    font-size: 0.88rem;
+    color: var(--text-main);
+    border-top: 1px solid var(--border);
+    padding-top: 6px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+/* Card button row at bottom, right-aligned */
+.card-btns-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+.card-btns {
+    display: flex;
+    gap: 6px;
+}
+
+/* Compact Menu */
+.menu-btn {
+    background: none;
+    border: none;
+    color: var(--text-sub);
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: background 0.15s;
+}
+.menu-btn:hover {
+    background: var(--search-bg);
+}
+
+.translation-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Tight gap between elements */
+}
+
+.card-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+/* Remove duplicate/old .jp-text rule */
+
+.en-text {
+    font-size: 1.1rem;
+    color: var(--text-main);
+    margin: 0;
+    line-height: 1.3;
+}
+
+/* Remove duplicate/old .context-text rule */
+
+/* Compact Menu */
+/* Kebab menu dropdown */
+.menu-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Ensure menu-content is positioned relative to the kebab button */
+.menu-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: 100%;
+    margin-top: 4px;
+    transform: none;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    z-index: 10;
+    min-width: 90px;
+    padding: 6px 0;
+}
+.menu-content.show {
+    display: block;
+}
+/* --- Fix report button hover style for uniform margin and padding --- */
+.menu-content .report-link {
+    display: block;
+    min-width: 80px;
+    max-width: fit-content;
+    margin: 4px 8px;
+    padding: 8px 0;
+    color: var(--accent);
+    text-align: center;
+    background: none;
+    border: none;
+    font-size: 0.95rem;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.15s;
+    box-sizing: border-box;
+}
+.menu-content .report-link:hover {
+    background: var(--search-bg);
 }

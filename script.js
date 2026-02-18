@@ -25,6 +25,19 @@ async function initializeApp() {
         allData = results.flat(); 
         
         displayTranslations(); 
+        // Event wiring for search
+        searchInput.addEventListener('input', () => displayTranslations(currentActiveCategory));
+        // Event wiring for filter buttons
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const tag = btn.getAttribute('data-tag');
+                currentActiveCategory = tag;
+                displayTranslations(tag);
+                // Optional: highlight active
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
     } catch (e) {
         console.error(e);
         grid.innerHTML = `<p style="color:red; padding:20px;">エラー: /data/ フォルダ内のJSONファイルを読み込めませんでした。</p>`;
@@ -37,79 +50,91 @@ function displayTranslations(categoryFilter = "All") {
     const katakanaTerm = toKatakana(term);
     grid.innerHTML = "";
 
-    // Search globally across all text and keywords
-    let results = allData.filter(item => {
-        const searchPool = (item.jp + item.en + (item.keywords || "")).toLowerCase();
-        const searchPoolKatakana = toKatakana(searchPool);
-        return searchPool.includes(term) || searchPoolKatakana.includes(katakanaTerm);
-    });
+    // 1. Filter by Category AND Search Term
+        let filtered = allData.filter(item => {
+            const matchesCategory = (categoryFilter === "All" || item.tag === categoryFilter);
+            const searchPool = (item.jp + item.en + (item.keywords || "")).toLowerCase();
+            const searchPoolKatakana = toKatakana(searchPool);
+            const matchesSearch = searchPool.includes(term) || searchPoolKatakana.includes(katakanaTerm);
+            return matchesCategory && matchesSearch;
+        });
 
-    // Filter by category ONLY if we aren't searching
-    if (categoryFilter !== "All" && term === "") {
-        results = results.filter(item => item.tag === categoryFilter);
-    }
+        // Shuffle filtered array (Fisher-Yates)
+        for (let i = filtered.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [filtered[i], filtered[j]] = [filtered[j], filtered[i]];
+        }
+        // Limit to 8
+        const limited = filtered.slice(0, 8);
 
-    // Show 10 random cards if search is empty
-    if (term === "" && results.length > 10) {
-        results = results.sort(() => 0.5 - Math.random()).slice(0, 10);
-    }
+        // 2. Handle Empty Results
+        if (limited.length === 0) {
+            grid.innerHTML = "<p class='no-results'>該当するフレーズが見つかりません。</p>";
+            return;
+        }
 
-    if (results.length === 0) {
-        grid.innerHTML = "<p class='no-results'>見つかりませんでした。別の言葉で試してください！</p>";
-        return;
-    }
-
-    results.forEach(item => {
-        const card = document.createElement('div');
-        card.className = 'card';
-        card.innerHTML = `
-            <div class="card-top">
-                <h3>${item.jp}</h3>
-                <div class="card-btns">
-                    <button class="print-btn" onclick="printPhrase('${item.jp}', '${item.en}')">印刷</button>
-                    <button class="copy-btn" data-text="${item.en}">コピー</button>
+        // 3. Render (Compact Design)
+        limited.forEach(item => {
+            const card = document.createElement('div');
+            card.className = 'translation-card';
+            // Google Form prefill: entry.2120499648 (Japanese), entry.1201813702 (English)
+            const reportSummary = `${item.jp}\n${item.en}${item.context ? `\n${item.context}` : ''}`;
+            const reportUrl = `https://docs.google.com/forms/d/e/1FAIpQLSfpbhutXoLYXMmI6aKyk0huRF_zpWxHVUwzdPWBwE8Q79xeIQ/viewform?usp=dialog&entry.1588045473=${encodeURIComponent(reportSummary)}`;
+            card.innerHTML = `
+                <div class="card-header-row">
+                    <span class="jp-text">${item.jp}</span>
+                    <div class="menu-container">
+                        <button class="menu-btn" onclick="window.toggleMenu(event)">⋮</button>
+                        <div class="menu-content">
+                            <a href="${reportUrl}" target="_blank" class="report-link" title="${reportSummary}">報告</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="en-text">${item.en}</div>
-            <div class="context">${item.context}</div>
-        `;
-        grid.appendChild(card);
-    });
+                <h3 class="en-text">${item.en}</h3>
+                ${item.context ? `<p class="context-text">${item.context}</p>` : ''}
+                <div class="card-btns-row">
+                    <div class="card-btns">
+                        <button class="print-btn" onclick="window.printPhrase('${item.jp.replace(/'/g, '\'')}', '${item.en.replace(/'/g, '\'')}')">印刷</button>
+                        <button class="copy-btn" data-text="${item.en}">コピー</button>
+                    </div>
+                </div>
+            `;
+            grid.appendChild(card);
+        });
 }
 
+// 4. Unified Copy Function with "OK!" feedback
 grid.addEventListener('click', (e) => {
     if (e.target.classList.contains('copy-btn')) {
         const text = e.target.getAttribute('data-text');
         navigator.clipboard.writeText(text).then(() => {
             const originalText = e.target.innerText;
             e.target.innerText = "OK!";
-            e.target.style.background = "#2ecc71";
+            e.target.style.background = "#2ecc71"; // Temporary green feedback
             e.target.style.color = "white";
             
             setTimeout(() => {
                 e.target.innerText = originalText;
-                e.target.style.background = ""; 
+                e.target.style.background = ""; // Revert to CSS default
                 e.target.style.color = "";
-            }, 1500);
+            }, 1200);
         });
     }
 });
 
-// Search input
-let searchTimeout;
-searchInput.addEventListener('input', () => {
-    clearTimeout(searchTimeout);
-    searchTimeout = setTimeout(() => displayTranslations(currentActiveCategory), 300);
-});
-
-// Category buttons
-document.querySelectorAll('.filter-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-        currentActiveCategory = btn.getAttribute('data-tag');
-        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        displayTranslations(currentActiveCategory);
+// Helper to open/close card menus
+window.toggleMenu = (e) => {
+    e.stopPropagation();
+    const menu = e.target.closest('.menu-container').querySelector('.menu-content');
+    document.querySelectorAll('.menu-content').forEach(m => {
+        if (m !== menu) m.classList.remove('show');
     });
+    menu.classList.toggle('show');
+};
+
+// Close menus when clicking anywhere else
+document.addEventListener('click', () => {
+    document.querySelectorAll('.menu-content').forEach(m => m.classList.remove('show'));
 });
 
 // Theme and Print
