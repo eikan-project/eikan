@@ -153,7 +153,7 @@ window.downloadPhraseImage = (jp, en) => {
         logging: false 
     }).then(canvas => {
         const link = document.createElement('a');
-        link.download = `EiKan_${jp.replace(/\s+/g, '_').substring(0, 20)}.png`;
+        link.download = `Eikan_${jp.replace(/\s+/g, '_').substring(0, 20)}.png`;
         link.href = canvas.toDataURL("image/png");
         link.click();
         
