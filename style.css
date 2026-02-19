@@ -6,32 +6,6 @@
     gap: 8px;
     margin-bottom: 2px;
 }
-:root {
-    /* Light Mode Palette */
-    --bg: #fcfcfc;
-    --header-bg: #ffffff;
-    --card-bg: #ffffff;
-    --primary: #2c3e50;    /* Deep Indigo */
-    --accent: #3498db;     /* Soft Blue */
-    --text-main: #2d3436;
-    --text-sub: #636e72;
-    --border: #dfe6e9;
-    --search-bg: #f1f2f6;
-}
-
-/* Dark Mode Override */
-.dark-mode {
-    --bg: #121212;
-    --header-bg: #1e1e1e;
-    --card-bg: #1e1e1e;
-    --primary: #ecf0f1;    
-    --accent: #5dade2;     
-    --text-main: #e0e0e0;
-    --text-sub: #b0b0b0;
-    --border: #333333;
-    --search-bg: #2d2d2d;
-}
-
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Arial, sans-serif;
     background-color: var(--bg);
@@ -312,8 +286,8 @@ footer {
 
 /* Card context: dark grey */
 .context-text {
-    font-size: 0.88rem;
-    color: var(--text-main);
+    font-size: 0.75rem;
+    color: var(--text-sub);
     border-top: 1px solid var(--border);
     padding-top: 6px;
     margin-top: 4px;
@@ -375,54 +349,196 @@ footer {
     line-height: 1.3;
 }
 
-/* Remove duplicate/old .context-text rule */
 
-/* Compact Menu */
-/* Kebab menu dropdown */
-.menu-container {
-    position: relative;
-    display: flex;
-    align-items: center;
+/* Download button and dropdown styles */
+.download-main-btn {
+    background: var(--search-bg);
+    border: 1px solid var(--border);
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: var(--text-main);
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    margin-left: 0;
 }
-
-/* Ensure menu-content is positioned relative to the kebab button */
-.menu-content {
+.download-main-btn:hover {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+.download-dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+.download-dropdown {
     display: none;
     position: absolute;
-    right: 0;
-    left: auto;
-    top: 100%;
-    margin-top: 4px;
-    transform: none;
+    left: 0;
+    top: 110%;
     background: var(--card-bg);
     border: 1px solid var(--border);
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    z-index: 10;
-    min-width: 90px;
+    z-index: 20;
+    min-width: 120px;
     padding: 6px 0;
 }
-.menu-content.show {
+.download-dropdown.show {
     display: block;
 }
-/* --- Fix report button hover style for uniform margin and padding --- */
-.menu-content .report-link {
+.download-dropdown .download-btn {
     display: block;
-    min-width: 80px;
-    max-width: fit-content;
-    margin: 4px 8px;
-    padding: 8px 0;
-    color: var(--accent);
-    text-align: center;
+    width: 100%;
     background: none;
     border: none;
+    color: var(--text-main);
+    text-align: left;
+    padding: 8px 16px;
     font-size: 0.95rem;
     cursor: pointer;
-    text-decoration: none;
-    border-radius: 8px;
+    border-radius: 6px;
     transition: background 0.15s;
-    box-sizing: border-box;
 }
-.menu-content .report-link:hover {
+.download-dropdown .download-btn:hover {
     background: var(--search-bg);
+    color: var(--accent);
 }
+/* カード内の要素をさらにコンパクトに */
+.card {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-header {
+    height: 24px; /* 高さを固定 */
+    margin-bottom: 8px;
+}
+
+.jp {
+    font-size: 0.85rem;
+    color: var(--accent);
+    margin-bottom: 4px;
+}
+
+.en {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+/* メニューの見た目 */
+.menu-content a {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.menu-content a:last-child { border-bottom: none; }
+
+:root {
+    /* New Minimalist Gradient Palette */
+    --bg: #fcfcfc;
+    --header-bg: rgba(255, 255, 255, 0.8);
+    --card-bg: #ffffff;
+    --primary: #2c3e50;
+    --accent: #3498db;
+    --text-main: #2d3436;
+    --text-sub: #636e72;
+    --border: #dfe6e9;
+    --search-bg: #f1f2f6;
+    --danger: #e74c3c;
+
+    /* Gradient from the PNG Border */
+    --gradient: linear-gradient(135deg, #a8edea 0%, #fed6e3 50%, #fac1eb 100%);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", sans-serif;
+    background: var(--gradient); /* Apply gradient to the whole page */
+    background-attachment: fixed;
+    margin: 0;
+    color: var(--text-main);
+    min-height: 100vh;
+}
+
+/* Minimalist Header */
+header {
+    background: var(--header-bg);
+    backdrop-filter: blur(10px);
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.search-container input {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: none;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    font-size: 1rem;
+    outline: none;
+}
+
+/* Card & Pulldown Styles */
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.card-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.menu-container { position: relative; }
+
+.menu-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--text-sub);
+    padding: 5px 10px;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    z-index: 100;
+    min-width: 160px;
+    overflow: hidden;
+}
+
+.menu-content.show { display: block; }
+
+.menu-content button, .menu-content a {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    text-align: left;
+    border: none;
+    background: none;
+    font-size: 0.9rem;
+    color: var(--text-main);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menu-content button:hover { background: var(--search-bg); }
