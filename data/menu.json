@@ -1224,14 +1224,6 @@
     "verified": false
   },
   {
-    "jp": "わんこそば",
-    "en": "Wanko Soba (Small bowls of buckwheat noodles)",
-    "tag": "Menu",
-    "context": "岩手県の名物。",
-    "keywords": "わんこそば, wanko soba, noodles, 岩手, iwate, all-you-can-eat, そば, 蕎麦, regional food",
-    "verified": false
-  },
-  {
     "jp": "きりたんぽ鍋",
     "en": "Kiritanpo Nabe (Rice stick hot pot)",
     "tag": "Menu",
@@ -1256,27 +1248,11 @@
     "verified": false
   },
   {
-    "jp": "出雲そば",
-    "en": "Izumo Soba (Buckwheat noodles from Shimane)",
-    "tag": "Menu",
-    "context": "島根県の名物。",
-    "keywords": "出雲そば, Izumo Soba (Buckwheat noodles from Shimane), izumo, soba, buckwheat, noodles, from, shimane, menu",
-    "verified": false
-  },
-  {
     "jp": "讃岐うどん",
     "en": "Sanuki Udon (Firm wheat noodles)",
     "tag": "Menu",
     "context": "香川県の名物。",
     "keywords": "讃岐うどん, Sanuki Udon (Firm wheat noodles), sanuki, udon, firm, wheat, noodles, menu",
-    "verified": false
-  },
-  {
-    "jp": "沖縄そば",
-    "en": "Okinawa Soba (Pork-based noodle soup)",
-    "tag": "Menu",
-    "context": "沖縄県の名物。",
-    "keywords": "沖縄そば, okinawa soba, noodles, pork soup, soki, おきなわそば,蕎麦, regional food",
     "verified": false
   },
   {
