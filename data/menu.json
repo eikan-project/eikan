@@ -604,7 +604,7 @@
     "en": "100% buckwheat noodles",
     "tag": "Menu",
     "context": "グルテンフリーを求める方向け。",
-    "keywords": "十割そば, 100% buckwheat noodles, 100%, buckwheat, noodles, menu",
+    "keywords": "十割そば, 100% buckwheat noodles, 100%, buckwheat, 蕎麦,noodles, menu",
     "verified": false
   },
   {
@@ -956,7 +956,7 @@
     "en": "Garlic chives soba",
     "tag": "Menu",
     "context": "ニラを使ったそば料理の説明に。",
-    "keywords": "ニラそば, Garlic chives soba, garlic, chives, soba, menu",
+    "keywords": "ニラそば, Garlic chives soba, garlic, chives, soba,蕎麦, menu",
     "verified": false
   },
   {
@@ -1004,7 +1004,7 @@
     "en": "Soba",
     "tag": "Menu",
     "context": "そば料理の説明に。",
-    "keywords": "そば, Soba, soba, menu",
+    "keywords": "そば, Soba, soba, menu,蕎麦, buckwheat noodles",
     "verified": false
   },
   {
@@ -1276,7 +1276,7 @@
     "en": "Okinawa Soba (Pork-based noodle soup)",
     "tag": "Menu",
     "context": "沖縄県の名物。",
-    "keywords": "沖縄そば, okinawa soba, noodles, pork soup, soki, おきなわそば, regional food",
+    "keywords": "沖縄そば, okinawa soba, noodles, pork soup, soki, おきなわそば,蕎麦, regional food",
     "verified": false
   },
   {
