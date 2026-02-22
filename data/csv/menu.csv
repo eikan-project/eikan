@@ -128,12 +128,10 @@
 うなぎ,Eel,Menu,うなぎ料理の説明に。,"うなぎ, Eel, eel, menu",False
 天ぷら,Tempura,Menu,天ぷら料理の説明に。,"天ぷら, Tempura, tempura, menu",False
 焼き鳥,Yakitori (grilled chicken skewers),Menu,焼き鳥料理の説明に。,"焼き鳥, Yakitori (grilled chicken skewers), yakitori, grilled, chicken, skewers, menu",False
-お好み焼き,Okonomiyaki (savory pancake),Menu,お好み焼き料理の説明に。,"お好み焼き, Okonomiyaki (savory pancake), okonomiyaki, savory, pancake, menu",False
 ヴィーガン,Vegan,Menu,ヴィーガン料理の説明に。,"ヴィーガン, Vegan, vegan, menu",False
 ベジタリアン,Vegetarian,Menu,ベジタリアン料理の説明に。,"ベジタリアン, Vegetarian, vegetarian, menu",False
 ハラル,Halal,Menu,ハラル料理の説明に。,"ハラル, Halal, halal, menu",False
 お好み焼き（広島風）,Hiroshima-style Okonomiyaki (Layered savory pancake),Menu,広島の名物。関西風との違いを説明する際に。,"お好み焼き（広島風）, Hiroshima-style Okonomiyaki (Layered savory pancake), hiroshima-style, okonomiyaki, layered, savory, pancake, menu",False
-たこ焼き,Takoyaki (Octopus balls),Menu,大阪の代表的なストリートフード。,"たこ焼き, Takoyaki (Octopus balls), takoyaki, octopus, balls, menu",False
 明太子,Spicy Pollock Roe,Menu,福岡・博多の名物。パスタやご飯のトッピングに。,"明太子, Spicy Pollock Roe, spicy, pollock, roe, menu",False
 ジンギスカン,Jingisukan (Grilled mutton and vegetables),Menu,北海道の名物料理。,"ジンギスカン, Jingisukan (Grilled mutton and vegetables), jingisukan, grilled, mutton, and, vegetables, menu",False
 ほうとう,Houtou (Flat udon noodles in miso pumpkin soup),Menu,山梨県のご当地料理。,"ほうとう, Houtou (Flat udon noodles in miso pumpkin soup), houtou, flat, udon, noodles, miso, pumpkin, soup, menu",False
@@ -147,15 +145,6 @@
 出雲そば,Izumo Soba (Buckwheat noodles from Shimane),Menu,島根県の名物。,"出雲そば, Izumo Soba (Buckwheat noodles from Shimane), izumo, soba, buckwheat, noodles, from, shimane, menu",False
 讃岐うどん,Sanuki Udon (Firm wheat noodles),Menu,香川県の名物。,"讃岐うどん, Sanuki Udon (Firm wheat noodles), sanuki, udon, firm, wheat, noodles, menu",False
 沖縄そば,Okinawa Soba (Pork-based noodle soup),Menu,沖縄県の名物。,"沖縄そば, okinawa soba, noodles, pork soup, soki, おきなわそば, regional food",False
-ゴーヤチャンプルー,Goya Champuru (Bitter melon stir-fry),Menu,沖縄の家庭料理。,"ゴーヤチャンプルー, goya, bitter melon, stir-fry, okinawa, 沖縄, tofu, pork, ちゃんぷるー",False
-クラフトビール（地ビール）,Local Craft Beer,Menu,地域の醸造所のビール。,"クラフトビール（地ビール）, Local Craft Beer, local, craft, beer, menu",False
-ノンアルコール飲料,Non-alcoholic beverages,Menu,お酒を飲まない方向けに。,"ノンアルコール飲料, Non-alcoholic beverages, non-alcoholic, beverages, menu",False
-旬（しゅん）の食材,Seasonal ingredients,Menu,今の時期に一番美味しい食材。,"旬（しゅん）の食材, Seasonal ingredients, seasonal, ingredients, menu",False
-仙台牛タン,Sendai Beef Tongue (Grilled),Menu,宮城・仙台の名物。,"仙台牛タン, gyutan, beef tongue, sendai, 宮城, 焼き肉, BBQ, tongue, ぎゅうたん, regional specialty",False
-きりたんぽ鍋,Kiritanpo Nabe (Rice stick hot pot),Menu,秋田県の名物。,"きりたんぽ, kiritanpo, hot pot, nabe, 秋田, akita, rice sticks, なべ, regional dish",False
-ひつまぶし,Hitsumabushi (Nagoya-style grilled eel over rice),Menu,愛知・名古屋の名物。,"ひつまぶし, hitsumabushi, eel, unagi, 名古屋, nagoya, うなぎ, 鰻, grilled eel",False
-宇都宮餃子,Utsunomiya Gyoza (Local pan-fried dumplings),Menu,栃木・宇都宮の名物。,"宇都宮餃子, Utsunomiya Gyoza (Local pan-fried dumplings), utsunomiya, gyoza, local, pan-fried, dumplings, menu",False
-讃岐うどん,Sanuki Udon (Firm wheat noodles),Menu,香川県の名物。,"讃岐うどん, Sanuki Udon (Firm wheat noodles), sanuki, udon, firm, wheat, noodles, menu",False
 ゴーヤチャンプルー,Goya Champuru (Bitter melon stir-fry),Menu,沖縄の家庭料理。,"ゴーヤチャンプルー, goya, bitter melon, stir-fry, okinawa, 沖縄, tofu, pork, ちゃんぷるー",False
 クラフトビール（地ビール）,Local Craft Beer,Menu,地域の醸造所のビール。,"クラフトビール（地ビール）, Local Craft Beer, local, craft, beer, menu",False
 ノンアルコール飲料,Non-alcoholic beverages,Menu,お酒を飲まない方向けに。,"ノンアルコール飲料, Non-alcoholic beverages, non-alcoholic, beverages, menu",False

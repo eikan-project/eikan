@@ -1032,14 +1032,6 @@
     "verified": false
   },
   {
-    "jp": "お好み焼き",
-    "en": "Okonomiyaki (savory pancake)",
-    "tag": "Menu",
-    "context": "お好み焼き料理の説明に。",
-    "keywords": "お好み焼き, Okonomiyaki (savory pancake), okonomiyaki, savory, pancake, menu",
-    "verified": false
-  },
-  {
     "jp": "ヴィーガン",
     "en": "Vegan",
     "tag": "Menu",
@@ -1069,14 +1061,6 @@
     "tag": "Menu",
     "context": "広島の名物。関西風との違いを説明する際に。",
     "keywords": "お好み焼き（広島風）, Hiroshima-style Okonomiyaki (Layered savory pancake), hiroshima-style, okonomiyaki, layered, savory, pancake, menu",
-    "verified": false
-  },
-  {
-    "jp": "たこ焼き",
-    "en": "Takoyaki (Octopus balls)",
-    "tag": "Menu",
-    "context": "大阪の代表的なストリートフード。",
-    "keywords": "たこ焼き, Takoyaki (Octopus balls), takoyaki, octopus, balls, menu",
     "verified": false
   },
   {
@@ -1181,78 +1165,6 @@
     "tag": "Menu",
     "context": "沖縄県の名物。",
     "keywords": "沖縄そば, okinawa soba, noodles, pork soup, soki, おきなわそば, regional food",
-    "verified": false
-  },
-  {
-    "jp": "ゴーヤチャンプルー",
-    "en": "Goya Champuru (Bitter melon stir-fry)",
-    "tag": "Menu",
-    "context": "沖縄の家庭料理。",
-    "keywords": "ゴーヤチャンプルー, goya, bitter melon, stir-fry, okinawa, 沖縄, tofu, pork, ちゃんぷるー",
-    "verified": false
-  },
-  {
-    "jp": "クラフトビール（地ビール）",
-    "en": "Local Craft Beer",
-    "tag": "Menu",
-    "context": "地域の醸造所のビール。",
-    "keywords": "クラフトビール（地ビール）, Local Craft Beer, local, craft, beer, menu",
-    "verified": false
-  },
-  {
-    "jp": "ノンアルコール飲料",
-    "en": "Non-alcoholic beverages",
-    "tag": "Menu",
-    "context": "お酒を飲まない方向けに。",
-    "keywords": "ノンアルコール飲料, Non-alcoholic beverages, non-alcoholic, beverages, menu",
-    "verified": false
-  },
-  {
-    "jp": "旬（しゅん）の食材",
-    "en": "Seasonal ingredients",
-    "tag": "Menu",
-    "context": "今の時期に一番美味しい食材。",
-    "keywords": "旬（しゅん）の食材, Seasonal ingredients, seasonal, ingredients, menu",
-    "verified": false
-  },
-  {
-    "jp": "仙台牛タン",
-    "en": "Sendai Beef Tongue (Grilled)",
-    "tag": "Menu",
-    "context": "宮城・仙台の名物。",
-    "keywords": "仙台牛タン, gyutan, beef tongue, sendai, 宮城, 焼き肉, BBQ, tongue, ぎゅうたん, regional specialty",
-    "verified": false
-  },
-  {
-    "jp": "きりたんぽ鍋",
-    "en": "Kiritanpo Nabe (Rice stick hot pot)",
-    "tag": "Menu",
-    "context": "秋田県の名物。",
-    "keywords": "きりたんぽ, kiritanpo, hot pot, nabe, 秋田, akita, rice sticks, なべ, regional dish",
-    "verified": false
-  },
-  {
-    "jp": "ひつまぶし",
-    "en": "Hitsumabushi (Nagoya-style grilled eel over rice)",
-    "tag": "Menu",
-    "context": "愛知・名古屋の名物。",
-    "keywords": "ひつまぶし, hitsumabushi, eel, unagi, 名古屋, nagoya, うなぎ, 鰻, grilled eel",
-    "verified": false
-  },
-  {
-    "jp": "宇都宮餃子",
-    "en": "Utsunomiya Gyoza (Local pan-fried dumplings)",
-    "tag": "Menu",
-    "context": "栃木・宇都宮の名物。",
-    "keywords": "宇都宮餃子, Utsunomiya Gyoza (Local pan-fried dumplings), utsunomiya, gyoza, local, pan-fried, dumplings, menu",
-    "verified": false
-  },
-  {
-    "jp": "讃岐うどん",
-    "en": "Sanuki Udon (Firm wheat noodles)",
-    "tag": "Menu",
-    "context": "香川県の名物。",
-    "keywords": "讃岐うどん, Sanuki Udon (Firm wheat noodles), sanuki, udon, firm, wheat, noodles, menu",
     "verified": false
   },
   {
