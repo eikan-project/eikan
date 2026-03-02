@@ -5,24 +5,14 @@
     "tag": "Sign",
     "context": "盗難防止の注意喚起に。",
     "keywords": "貴重品は自己管理してください, Keep valuables with you, 財布, カバン, 盗難, security, wallet, bag, きちょうひん",
-    "verified": true,
-    "featured": true
-  },
-  {
-    "jp": "土足厳禁",
-    "en": "No outdoor shoes",
-    "tag": "Sign",
-    "context": "和室やジムの入り口に。",
-    "keywords": "土足厳禁, No outdoor shoes, 脱ぐ, スリッパ, shoes, take off, remove, どそく, くつ",
-    "verified": true,
-    "featured": true
+    "verified": true
   },
   {
     "jp": "写真撮影禁止",
     "en": "Photos prohibited",
     "tag": "Sign",
     "context": "撮影禁止の場所に。",
-    "keywords": "写真撮影禁止, Photos prohibited, カメラ, 禁止, OK, photo, camera, flash, さつえい",
+    "keywords": "写真撮影禁止, 撮影禁止, カメラ, 録画, 禁止, シャッター, no photos",
     "verified": true
   },
   {
@@ -30,7 +20,7 @@
     "en": "Currently preparing / Closed",
     "tag": "Sign",
     "context": "開店前のドアに。",
-    "keywords": "準備中, Currently preparing / Closed, 休み, closed, preparing, break, じゅんびちゅう, しゅうりょう",
+    "keywords": "準備中, じゅんびちゅう, 支度中, 閉店, 休み, 営業時間外, closed, preparing",
     "verified": true
   },
   {
@@ -78,7 +68,7 @@
     "en": "Cleaning in progress",
     "tag": "Sign",
     "context": "トイレなどの清掃時に。",
-    "keywords": "清掃中, Cleaning in progress",
+    "keywords": "そうじ, 掃除, メンテナンス, トイレ, cleaning, maintenance",
     "verified": true
   },
   {
@@ -86,7 +76,7 @@
     "en": "Staff only / Authorized personnel only",
     "tag": "Sign",
     "context": "バックヤードの入り口に。",
-    "keywords": "関係者以外立入禁止, Staff only / Authorized personnel only",
+    "keywords": "スタッフ専用, 業務用, バックヤード, はいらないで, keep out, staff only",
     "verified": true
   },
   {
@@ -94,7 +84,7 @@
     "en": "Mind your head",
     "tag": "Sign",
     "context": "天井が低い場所に。",
-    "keywords": "頭上注意, Mind your head",
+    "keywords": "天井, 低い, ぶつからないで, 階段, head, ceiling, mind your head, ずじょ",
     "verified": true
   },
   {
@@ -118,7 +108,7 @@
     "en": "Trash can is here",
     "tag": "Sign",
     "context": "ゴミ捨て場の案内に。",
-    "keywords": "ゴミ箱はこちらです, Trash can is here",
+    "keywords": "ごみばこ, 屑入れ, 廃棄, くずいれ, trash, garbage, bin",
     "verified": true
   },
   {
@@ -150,7 +140,7 @@
     "en": "No pets allowed",
     "tag": "Sign",
     "context": "飲食店の入り口に。",
-    "keywords": "ペット入店不可, No pets allowed",
+    "keywords": "いぬ, ねこ, 動物, ペット禁止, 飲食店, animals, dog, cat",
     "verified": true
   },
   {
@@ -158,7 +148,7 @@
     "en": "Service dogs welcome",
     "tag": "Sign",
     "context": "補助犬の入店許可に。",
-    "keywords": "盲導犬可, Service dogs welcome",
+    "keywords": "盲導犬可, Service, dogs, welcome,いぬ, ねこ, 動物, 飲食店, animals, dog, cat",
     "verified": true
   },
   {
@@ -166,7 +156,7 @@
     "en": "Emergency stairs",
     "tag": "Sign",
     "context": "避難経路の案内に。",
-    "keywords": "非常階段, Emergency stairs",
+    "keywords": "避難, 災害, 火事, 地震, 出口, ひじょうかいだん, stairs, emergency exit",
     "verified": true
   },
   {
@@ -214,15 +204,15 @@
     "en": "No calling",
     "tag": "Sign",
     "context": "静かな場所でのマナーに。",
-    "keywords": "通話はご遠慮ください, No calling, しずかに, quiet, silence, noise,禁止, つうわ",
+    "keywords": "通話はご遠慮ください, No calling, しずかに, quiet, silence, noise, 禁止, つうわ",
     "verified": true
   },
   {
     "jp": "順番待ちの方はこちら",
-    "en": "Please wait here ",
+    "en": "Please wait here",
     "tag": "Sign",
     "context": "混雑時のシステム案内に。",
-    "keywords": "順番待ち,Please wait here, 列, 並ぶ, wait, line, here, queue, ここに",
+    "keywords": "順番待ち, Please wait here, 列, 並ぶ, wait, line, here, queue, ここに",
     "verified": true
   },
   {
@@ -242,19 +232,11 @@
     "verified": true
   },
   {
-    "jp": "トイレットペーパーは流さないでください",
-    "en": "Do not flush toilet paper",
+    "jp": "トイレットペーパー以外流さないでください",
+    "en": "Please flush only toilet paper",
     "tag": "Sign",
-    "context": "古い配管の場所での注意に。",
-    "keywords": "トイレットペーパーは流さないでください, Do not flush toilet paper, 化粧室, restroom, toilet, W.C",
-    "verified": true
-  },
-  {
-    "jp": "トイレットペーパー以外流さないで",
-    "en": "Do not flush anything but toilet paper",
-    "tag": "Sign",
-    "context": "一般的なトイレのマナーに。",
-    "keywords": "トイレットペーパー以外流さないで, Do not flush anything but toilet paper, 化粧室, restroom, toilet, W.C",
+    "context": "トイレの詰まり防止やマナー啓発に。",
+    "keywords": "トイレットペーパー, 流す, トイレ, お手洗い, 化粧室, 詰まり, 故障, 禁止, マナー, ながさないで, restroom, toilet, flush",
     "verified": true
   },
   {
@@ -262,16 +244,26 @@
     "en": "Please wash your hands",
     "tag": "Sign",
     "context": "衛生管理の案内に。",
-    "keywords": "手を洗ってください, Please wash your hands",
+    "keywords": "手を洗ってください, Please wash your hands,手指の消毒, 消毒してください, 手洗い, 除菌, アルコール, コロナ対策, 衛生, しょうどく, てあらい, sanitize, alcohol, hands",
     "verified": true
   },
   {
-    "jp": "消毒してください",
+    "jp": "手指の消毒をお願いします",
     "en": "Please sanitize your hands",
     "tag": "Sign",
     "context": "入り口での消毒依頼に。",
-    "keywords": "消毒してください, Please sanitize your hands",
-    "verified": true
+    "keywords": "手指の消毒, 消毒してください, 手洗い, 除菌, アルコール, コロナ対策, 衛生, しょうどく, てあらい, sanitize, alcohol, hands",
+    "verified": true,
+    "featured":true
+  },
+  {
+    "jp": "土足厳禁",
+    "en": "No outdoor shoes",
+    "tag": "Sign",
+    "context": "和室やジムの入り口に。",
+    "keywords": "土足厳禁, No outdoor shoes, 脱ぐ, スリッパ, shoes, take off, remove, どそく, くつ, ぬぐ",
+    "verified": true,
+    "featured": true
   },
   {
     "jp": "検温にご協力ください",
@@ -430,7 +422,7 @@
     "en": "Please take off your shoes",
     "tag": "Sign",
     "context": "和室などでの案内に。",
-    "keywords": "靴を脱いでください, Please take off your shoes, 脱ぐ, スリッパ, shoes, take off, remove, どそく, くつ",
+    "keywords": "靴を脱いでください, Please take off your shoes, 脱ぐ, スリッパ, shoes, take off, remove, どそく, くつ, ぬぐ",
     "verified": true
   },
   {
@@ -470,7 +462,7 @@
     "en": "No tripods or monopods",
     "tag": "Sign",
     "context": "混雑する場所での撮影制限。",
-    "keywords": "三脚・一脚の使用禁止, No tripods or monopods",
+    "keywords": "三脚, 一脚, 使用禁止, tripods, monopods, カメラ, マナー, 自撮り棒, セルカ棒",
     "verified": true
   },
   {
@@ -506,219 +498,219 @@
     "verified": true
   },
   {
-  "jp": "トイレはこちら",
-  "en": "Restroom this way",
-  "tag": "Sign",
-  "context": "トイレの案内表示に。",
-  "keywords": "トイレはこちら, restroom, toilet, WC, bathroom, 化粧室",
-  "verified": true
-},
-{
-  "jp": "多目的トイレ",
-  "en": "Accessible restroom",
-  "tag": "Sign",
-  "context": "バリアフリートイレの表示に。",
-  "keywords": "多目的トイレ, accessible restroom, wheelchair, barrier-free",
-  "verified": true
-},
-{
-  "jp": "使用中",
-  "en": "Occupied",
-  "tag": "Sign",
-  "context": "トイレや更衣室のドア表示に。",
-  "keywords": "使用中, occupied, in use",
-  "verified": true
-},
-{
-  "jp": "空室",
-  "en": "Vacant",
-  "tag": "Sign",
-  "context": "トイレや更衣室の空き表示に。",
-  "keywords": "空室, vacant, available",
-  "verified": true
-},
-{
-  "jp": "立ち入り禁止",
-  "en": "No entry",
-  "tag": "Sign",
-  "context": "立入不可エリアの表示に。",
-  "keywords": "立ち入り禁止, no entry, prohibited, restricted area",
-  "verified": true
-},
-{
-  "jp": "立ち止まらないでください",
-  "en": "Do not stop here",
-  "tag": "Sign",
-  "context": "駅構内や通路での案内に。",
-  "keywords": "立ち止まらないでください, do not stop, keep moving",
-  "verified": true
-},
-{
-  "jp": "走らないでください",
-  "en": "Do not run",
-  "tag": "Sign",
-  "context": "駅や施設内の安全注意。",
-  "keywords": "走らないでください, do not run",
-  "verified": true
-},
-{
-  "jp": "押さないでください",
-  "en": "Do not push",
-  "tag": "Sign",
-  "context": "混雑時の注意喚起に。",
-  "keywords": "押さないでください, do not push",
-  "verified": true
-},
-{
-  "jp": "優先席",
-  "en": "Priority seating",
-  "tag": "Sign",
-  "context": "電車やバスの表示に。",
-  "keywords": "優先席, priority seating, elderly, pregnant, disabled",
-  "verified": true
-},
-{
-  "jp": "駐車禁止",
-  "en": "No parking",
-  "tag": "Sign",
-  "context": "道路や施設前に。",
-  "keywords": "駐車禁止, no parking",
-  "verified": true
-},
-{
-  "jp": "駐輪場",
-  "en": "Bicycle parking",
-  "tag": "Sign",
-  "context": "自転車置き場の案内に。",
-  "keywords": "駐輪場, bicycle parking",
-  "verified": true
-},
-{
-  "jp": "一方通行",
-  "en": "One way",
-  "tag": "Sign",
-  "context": "道路や施設内通路に。",
-  "keywords": "一方通行, one way",
-  "verified": true
-},
-{
-  "jp": "お静かに参拝ください",
-  "en": "Please pray quietly",
-  "tag": "Sign",
-  "context": "神社や寺院での注意に。",
-  "keywords": "参拝, shrine, temple, quiet, prayer",
-  "verified": true
-},
-{
-  "jp": "撮影は他のお客様のご迷惑にならないように",
-  "en": "Please be considerate when taking photos",
-  "tag": "Sign",
-  "context": "観光地でのマナー案内に。",
-  "keywords": "撮影マナー, considerate, photos",
-  "verified": true
-},
-{
-  "jp": "ゴミはお持ち帰りください",
-  "en": "Please take your trash home",
-  "tag": "Sign",
-  "context": "公園や観光地での案内に。",
-  "keywords": "ゴミはお持ち帰りください, take trash home",
-  "verified": true
-},
-{
-  "jp": "エアコンは電源を切ってください",
-  "en": "Please turn off the air conditioner",
-  "tag": "Sign",
-  "context": "宿泊施設での注意に。",
-  "keywords": "エアコン, turn off, air conditioner",
-  "verified": true
-},
-{
-  "jp": "チェックアウト後はご利用いただけません",
-  "en": "Not available after checkout",
-  "tag": "Sign",
-  "context": "ホテル設備利用の案内に。",
-  "keywords": "チェックアウト後, not available after checkout",
-  "verified": true
-},
-{
-  "jp": "貴重品はフロントにお預けください",
-  "en": "Please leave valuables at the front desk",
-  "tag": "Sign",
-  "context": "ホテルの案内表示に。",
-  "keywords": "貴重品, front desk, valuables",
-  "verified": true
-},
-{
-  "jp": "自由にお取りください",
-  "en": "Feel free to take one",
-  "tag": "Sign",
-  "context": "チラシや割り箸などに。",
-  "keywords": "自由にお取りください, free to take, please take one",
-  "verified": true
-},
-{
-  "jp": "券売機で食券をお買い求めください",
-  "en": "Please purchase a meal ticket from the vending machine",
-  "tag": "Sign",
-  "context": "ラーメン店入口。",
-  "keywords": "券売機で食券をお買い求めください, ticket machine, ramen shop",
-  "verified": true
-},
-{
-  "jp": "満席",
-  "en": "Full",
-  "tag": "Sign",
-  "context": "座席満席時。",
-  "keywords": "満席, full, no seats available",
-  "verified": true
-},
-{
-  "jp": "相席をお願いします",
-  "en": "Please share a table",
-  "tag": "Sign",
-  "context": "混雑時。",
-  "keywords": "相席をお願いします, share table, crowded",
-  "verified": true
-},
-{
-  "jp": "危険　手や頭を出さないでください",
-  "en": "Danger – Do not put your hands or head out",
-  "tag": "Sign",
-  "context": "安全注意。",
-  "keywords": "危険 手や頭を出さないでください, danger, safety warning",
-  "verified": true
-},
-{
-  "jp": "不法投棄禁止",
-  "en": "Illegal dumping prohibited",
-  "tag": "Sign",
-  "context": "ゴミ問題対策。",
-  "keywords": "不法投棄禁止, illegal dumping prohibited, trash, garbage",
-  "verified": true
-},
-{
-  "jp": "自転車乗り入れ禁止",
-  "en": "No bicycles allowed",
-  "tag": "Sign",
-  "context": "敷地内注意。",
-  "keywords": "自転車乗り入れ禁止, no bicycles, cycling prohibited",
-  "verified": true
-},
-{
-  "jp": "フンは持ち帰りましょう",
-  "en": "Please take your pet's waste home",
-  "tag": "Sign",
-  "context": "公園や敷地内。",
-  "keywords": "フンは持ち帰りましょう, pet waste, dog poop, clean up",
-  "verified": true
-},
-{
-  "jp": "ラストオーダーは__時__分です",
-  "en": "Last order is at __:__",
-  "tag": "Sign",
-  "context": "営業時間案内。",
-  "keywords": "ラストオーダー, last order, closing time",
-  "verified": true
-}
+    "jp": "トイレはこちら",
+    "en": "Restroom this way",
+    "tag": "Sign",
+    "context": "トイレの案内表示に。",
+    "keywords": "トイレはこちら, restroom, toilet, WC, bathroom, 化粧室",
+    "verified": true
+  },
+  {
+    "jp": "多目的トイレ",
+    "en": "Accessible restroom",
+    "tag": "Sign",
+    "context": "バリアフリートイレの表示に。",
+    "keywords": "多目的トイレ, accessible restroom, wheelchair, barrier-free",
+    "verified": true
+  },
+  {
+    "jp": "使用中",
+    "en": "Occupied",
+    "tag": "Sign",
+    "context": "トイレや更衣室のドア表示に。",
+    "keywords": "使用中, occupied, in use",
+    "verified": true
+  },
+  {
+    "jp": "空室",
+    "en": "Vacant",
+    "tag": "Sign",
+    "context": "トイレや更衣室の空き表示に。",
+    "keywords": "空室, vacant, available",
+    "verified": true
+  },
+  {
+    "jp": "立ち入り禁止",
+    "en": "No entry",
+    "tag": "Sign",
+    "context": "立入不可エリアの表示に。",
+    "keywords": "立ち入り禁止, no entry, prohibited, restricted area",
+    "verified": true
+  },
+  {
+    "jp": "立ち止まらないでください",
+    "en": "Do not stop here",
+    "tag": "Sign",
+    "context": "駅構内や通路での案内に。",
+    "keywords": "立ち止まらないでください, do not stop, keep moving",
+    "verified": true
+  },
+  {
+    "jp": "走らないでください",
+    "en": "Do not run",
+    "tag": "Sign",
+    "context": "駅や施設内の安全注意。",
+    "keywords": "走らないでください, do not run",
+    "verified": true
+  },
+  {
+    "jp": "押さないでください",
+    "en": "Do not push",
+    "tag": "Sign",
+    "context": "混雑時の注意喚起に。",
+    "keywords": "押さないでください, do not push",
+    "verified": true
+  },
+  {
+    "jp": "優先席",
+    "en": "Priority seating",
+    "tag": "Sign",
+    "context": "電車やバスの表示に。",
+    "keywords": "優先席, priority seating, elderly, pregnant, disabled",
+    "verified": true
+  },
+  {
+    "jp": "駐車禁止",
+    "en": "No parking",
+    "tag": "Sign",
+    "context": "道路や施設前に。",
+    "keywords": "駐車禁止, no parking",
+    "verified": true
+  },
+  {
+    "jp": "駐輪場",
+    "en": "Bicycle parking",
+    "tag": "Sign",
+    "context": "自転車置き場の案内に。",
+    "keywords": "駐輪場, bicycle parking",
+    "verified": true
+  },
+  {
+    "jp": "一方通行",
+    "en": "One way",
+    "tag": "Sign",
+    "context": "道路や施設内通路に。",
+    "keywords": "一方通行, one way",
+    "verified": true
+  },
+  {
+    "jp": "お静かに参拝ください",
+    "en": "Please pray quietly",
+    "tag": "Sign",
+    "context": "神社や寺院での注意に。",
+    "keywords": "参拝, shrine, temple, quiet, prayer",
+    "verified": true
+  },
+  {
+    "jp": "撮影は他のお客様のご迷惑にならないように",
+    "en": "Please be considerate when taking photos",
+    "tag": "Sign",
+    "context": "観光地でのマナー案内に。",
+    "keywords": "撮影マナー, considerate, photos",
+    "verified": true
+  },
+  {
+    "jp": "ゴミはお持ち帰りください",
+    "en": "Please take your trash home",
+    "tag": "Sign",
+    "context": "公園や観光地での案内に。",
+    "keywords": "ゴミはお持ち帰りください, take trash home",
+    "verified": true
+  },
+  {
+    "jp": "エアコンは電源を切ってください",
+    "en": "Please turn off the air conditioner",
+    "tag": "Sign",
+    "context": "宿泊施設での注意に。",
+    "keywords": "エアコン, turn off, air conditioner",
+    "verified": true
+  },
+  {
+    "jp": "チェックアウト後はご利用いただけません",
+    "en": "Not available after checkout",
+    "tag": "Sign",
+    "context": "ホテル設備利用の案内に。",
+    "keywords": "チェックアウト後, not available after checkout",
+    "verified": true
+  },
+  {
+    "jp": "貴重品はフロントにお預けください",
+    "en": "Please leave valuables at the front desk",
+    "tag": "Sign",
+    "context": "ホテルの案内表示に。",
+    "keywords": "貴重品, front desk, valuables",
+    "verified": true
+  },
+  {
+    "jp": "自由にお取りください",
+    "en": "Feel free to take one",
+    "tag": "Sign",
+    "context": "チラシや割り箸などに。",
+    "keywords": "自由にお取りください, free to take, please take one",
+    "verified": true
+  },
+  {
+    "jp": "券売機で食券をお買い求めください",
+    "en": "Please purchase a meal ticket from the vending machine",
+    "tag": "Sign",
+    "context": "ラーメン店入口。",
+    "keywords": "券売機で食券をお買い求めください, ticket machine, ramen shop",
+    "verified": true
+  },
+  {
+    "jp": "満席",
+    "en": "Full",
+    "tag": "Sign",
+    "context": "座席満席時。",
+    "keywords": "満席, full, no seats available",
+    "verified": true
+  },
+  {
+    "jp": "相席をお願いします",
+    "en": "Please share a table",
+    "tag": "Sign",
+    "context": "混雑時。",
+    "keywords": "相席をお願いします, share table, crowded",
+    "verified": true
+  },
+  {
+    "jp": "危険　手や頭を出さないでください",
+    "en": "Danger – Do not put your hands or head out",
+    "tag": "Sign",
+    "context": "安全注意。",
+    "keywords": "危険, 危ない, 注意, 禁止, 窓, 身を乗り出す, danger, safety",
+    "verified": true
+  },
+  {
+    "jp": "不法投棄禁止",
+    "en": "Illegal dumping prohibited",
+    "tag": "Sign",
+    "context": "ゴミ問題対策。",
+    "keywords": "不法投棄禁止, ゴミ捨て, 廃棄, ポイ捨て, 禁止, 不法, illegal dumping",
+    "verified": true
+  },
+  {
+    "jp": "自転車乗り入れ禁止",
+    "en": "No bicycles allowed",
+    "tag": "Sign",
+    "context": "敷地内注意。",
+    "keywords": "自転車乗り入れ禁止, no bicycles, cycling prohibited",
+    "verified": true
+  },
+  {
+    "jp": "フンは持ち帰りましょう",
+    "en": "Please take your pet's waste home",
+    "tag": "Sign",
+    "context": "公園や敷地内。",
+    "keywords": "フンは持ち帰りましょう, pet waste, dog poop, clean up",
+    "verified": true
+  },
+  {
+    "jp": "ラストオーダーは__時__分です",
+    "en": "Last order is at __:__",
+    "tag": "Sign",
+    "context": "営業時間案内。",
+    "keywords": "ラストオーダー, last order, closing time",
+    "verified": true
+  }
 ]

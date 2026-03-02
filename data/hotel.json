@@ -186,7 +186,7 @@
   },
   {
     "jp": "フロントは24時間対応です",
-    "en": "Front desk open 24 hours",
+    "en": "Front desk is open 24 hours",
     "tag": "Hotel",
     "context": "フロントの案内に。",
     "keywords": "フロントは24時間対応です, Front desk open 24 hours",
@@ -442,7 +442,7 @@
   },
   {
     "jp": "チェックインは___時からです",
-    "en": "Check-in starts at ___",
+    "en": "Check-in is available from ___ AM/PM",
     "tag": "Hotel",
     "context": "チェックイン開始時間の案内に。",
     "keywords": "check-in time, arrival time, ___時, front desk, hotel time",
@@ -474,10 +474,10 @@
   },
   {
     "jp": "クレジットカードをお預かりします",
-    "en": "We will hold your credit card",
+    "en": "We will authorize/secure your credit card",
     "tag": "Hotel",
     "context": "保証目的でのカード預かりに。",
-    "keywords": "credit card hold, card deposit, payment hold, front desk",
+    "keywords": "クレジットカード, 預かる, カード, credit card, hold, card deposit, payment hold, front desk",
     "verified": true
   },
   {
@@ -501,7 +501,7 @@
     "en": "Would you like us to call a taxi?",
     "tag": "Hotel",
     "context": "外出サポートに。",
-    "keywords": "taxi, call taxi, transportation, ride, front desk help",
+    "keywords": "タクシー, 呼び出し, 配車, 予約, 乗り物, 車, taxi, call",
     "verified": true
   },
   {
@@ -509,7 +509,7 @@
     "en": "It takes about ___ minutes to the airport",
     "tag": "Hotel",
     "context": "移動時間案内に。",
-    "keywords": "airport, minutes, travel time, transport, shuttle",
+    "keywords": "空港, アクセス, 移動時間, 所要時間, 行き方, 飛行機, airport, travel time",
     "verified": true
   },
   {
@@ -517,7 +517,7 @@
     "en": "Here is a local sightseeing map",
     "tag": "Hotel",
     "context": "観光サポートに。",
-    "keywords": "map, sightseeing, tourist map, 観光, local guide",
+    "keywords": "観光, 地図, マップ, ガイド, 観光案内, 周辺, map, sightseeing",
     "verified": true
   },
   {

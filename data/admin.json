@@ -12,15 +12,16 @@
     "en": "Please submit the required documents",
     "tag": "Admin",
     "context": "申請受付時の一般的な案内に。",
-    "keywords": "必要書類を提出してください, Please submit the required documents",
-    "verified": true
+    "keywords": "必要,書類,提出, Please, submit, required, documents",
+    "verified": true,
+    "featured":true
   },
   {
-    "jp": "身分証明書を提示してください",
-    "en": "Please present your ID",
+    "jp": "身分証明書を提示してください(パスポート又は在留カード)",
+    "en": "Please present your ID (Passport or Residence Card)",
     "tag": "Admin",
     "context": "本人確認の依頼に。運転免許証やパスポート等。",
-    "keywords": "身分証明書を提示してください, Please present your ID, 見せる, 本人確認, check, show, ID",
+    "keywords": "身分証明書を提示してください, 在留カード, 在留, 資格, 在留資格, present, ID, 見せる, 本人確認, check, show, ID",
     "verified": true,
     "featured": true
   },
@@ -65,11 +66,11 @@
     "verified": true
   },
   {
-    "jp": "戸籍謄本・抄本を請求する",
-    "en": "Request a copy of the family register full(謄本) or partial(抄本)",
+    "jp": "戸籍謄本・抄本が必要でしょうか",
+    "en": "Do you need a full (謄本) or partial (抄本) copy of the family register?",
     "tag": "Admin",
     "context": "戸籍に関する手続きの案内に。",
-    "keywords": "戸籍証明書を請求する, Request a family register full/partial copy, 抄本, 謄本, 家系, family register, koseki",
+    "keywords": "戸籍証明書を請求する, Request, family register, full, partial, copy, 抄本, 謄本, 家系, family register, koseki",
     "verified": true
   },
   {
@@ -130,10 +131,10 @@
   },
   {
     "jp": "個人情報は法令に従い管理します",
-    "en": "Personal information will be managed in accordance with the law",
+    "en": "Personal information will be handled in accordance with the law",
     "tag": "Admin",
     "context": "プライバシー・保護に関する案内に。",
-    "keywords": "個人情報は法令に従い管理します, Personal information will be managed in accordance with the law",
+    "keywords": "個人情報は法令に従い管理します, Personal, information, handled, accordance, law",
     "verified": true
   },
   {
@@ -298,10 +299,10 @@
   },
   {
     "jp": "所得税の還付申請を行う",
-    "en": "File for income tax refund",
+    "en": "Apply for an income tax refund",
     "tag": "Admin",
     "context": "過納や控除適用時の手続きに。",
-    "keywords": "所得税の還付申請を行う, Apply for income tax refund, 手続き, 申し込み, apply, 納税, 税金, 確定申告, tax, payment",
+    "keywords": "所得税の還付申請を行う, Apply, income, tax, refund, 手続き, 申し込み, 納税, 税金, 確定申告, tax, payment",
     "verified": true
   },
   {
@@ -362,7 +363,7 @@
   },
   {
     "jp": "在留カード",
-    "en": "Residence Card",
+    "en": "Residence (Zairyu) Card",
     "tag": "Admin",
     "context": "中長期在留者の身分証明として。",
     "keywords": "在留カード, Residence Card, ビザ, 入管, visa, zairyu",
@@ -413,7 +414,7 @@
     "en": "Re-entry permit",
     "tag": "Admin",
     "context": "一時出国する外国籍の方に。",
-    "keywords": "再入国許可, Re-entry permit",
+    "keywords": "再入国許可, Re-entry permit,入国,許可",
     "verified": true
   },
   {
@@ -474,7 +475,7 @@
   },
   {
     "jp": "予約なしでも受付可能です",
-    "en": "Walk-ins are accepted",
+    "en": "Walk-ins are welcomed",
     "tag": "Admin",
     "context": "予約不要の案内に。",
     "keywords": "予約不要, walk-in, available, 受付, counter",
