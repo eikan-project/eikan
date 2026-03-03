@@ -542,7 +542,7 @@ const pageData = {
         <p>どなたでも無料でご利用いただけます。店頭掲示やタブレット表示など、現場に合わせてご活用ください。</p>
     `,
     guide: `
-        <h2 style="color:var(--accent); font-weight:900;">使いかた</h2>
+        <h2 style="color:var(--accent); font-weight:900;">使い方</h2>
         <p><strong>1. 検索:</strong> キーワードやカテゴリーから必要な表現を探します。</p>
         <p><strong>2. クイック操作:</strong> カードをクリックして「全画面」で提示したり、メニューから1枚ずつ「画像保存」や「印刷」が可能です。</p>
         <p><strong>3. まとめて処理:</strong> <br>
