@@ -497,7 +497,7 @@
     "verified": true
   },
   {
-    "jp": "タクシーをお呼びしましょうか？",
+    "jp": "タクシーをお呼びしますか？",
     "en": "Would you like us to call a taxi?",
     "tag": "Hotel",
     "context": "外出サポートに。",

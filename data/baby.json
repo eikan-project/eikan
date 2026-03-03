@@ -121,11 +121,11 @@
     "verified": true
     },
     {
-    "jp": "迷子のお呼び出しをしましょうか？",
+    "jp": "迷子のお呼び出しをしますか？",
     "en": "Shall we make an announcement for your missing child?",
     "tag": "Baby",
     "context": "迷子が発生した際の対応。",
-    "keywords": "迷子のお呼び出しをしましょうか？, announcement, missing child, 迷子, 放送, 呼び出し",
+    "keywords": "迷子のお呼び出しをしますか？, announcement, missing child, 迷子, 放送, 呼び出し",
     "verified": true
     },
     {

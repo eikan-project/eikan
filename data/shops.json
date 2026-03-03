@@ -16,11 +16,11 @@
     "verified": true
     },
     {
-    "jp": "サイズ違いをお持ちしましょうか？",
+    "jp": "サイズ違いをお持ちしますか？",
     "en": "Would you like me to bring a different size?",
     "tag": "Shops",
     "context": "サイズが合わない様子の時に。",
-    "keywords": "サイズ違いをお持ちしましょうか？, size, different, 大きい, 小さい, big, small, 変更",
+    "keywords": "サイズ違いをお持ちしますか？, size, different, 大きい, 小さい, big, small, 変更",
     "verified": true,
     "featured": true
     },
@@ -73,11 +73,11 @@
     "verified": true
     },
     {
-    "jp": "ギフト用レシートをお入れしますか？",
+    "jp": "ギフト用レシートをお入れしましょうか？",
     "en": "Would you like a gift receipt?",
     "tag": "Shops",
     "context": "プレゼント購入時の確認に。",
-    "keywords": "ギフト用レシートをお入れしますか？, gift receipt, ギフト, レシート, 贈り物, 値段消し, price tag",
+    "keywords": "ギフト用レシートをお入れしましょうか？, gift receipt, ギフト, レシート, 贈り物, 値段消し, price tag",
     "verified": true
     },
     {
@@ -177,11 +177,11 @@
     "verified": true
     },
     {
-    "jp": "袋を二重にしましょうか？",
+    "jp": "袋を二重にしますか？",
     "en": "Shall I double-bag it for you?",
     "tag": "Shops",
     "context": "重い商品や雨の日の梱包に。",
-    "keywords": "袋を二重にしましょうか？, double bag, 袋, 二重, 重い, heavy, rain",
+    "keywords": "袋を二重にしますか？, double bag, 袋, 二重, 重い, heavy, rain",
     "verified": true
     },
     {

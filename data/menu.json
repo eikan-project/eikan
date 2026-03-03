@@ -1345,7 +1345,7 @@
     "verified": true
   },
   {
-    "jp": "ご注文はお決まりでしょうか？",
+    "jp": "ご注文はお決まりですか？",
     "en": "Are you ready to order?",
     "tag": "Menu",
     "context": "注文確認時に。",

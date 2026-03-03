@@ -65,7 +65,7 @@
     "verified": true
   },
   {
-    "jp": "戸籍謄本・抄本が必要でしょうか",
+    "jp": "戸籍謄本・抄本が必要ですか",
     "en": "Do you need a full (謄本) or partial (抄本) copy of the family register?",
     "tag": "Admin",
     "context": "戸籍に関する手続きの案内に。",
