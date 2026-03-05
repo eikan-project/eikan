@@ -744,8 +744,17 @@ function stopHintRotation() {
     clearInterval(hintInterval);
 }
 
+const searchIcon = document.querySelector('.search-icon-svg');
+
 searchInput.addEventListener('input', () => {
+    const hasValue = searchInput.value.length > 0;
     searchHintEl.style.display = searchInput.value.length > 0 ? 'none' : 'block';
+
+    if (hasValue) {
+        searchIcon.classList.add('hidden');
+    } else {
+        searchIcon.classList.remove('hidden');
+    }
     
     clearTimeout(searchTimeout);
     searchTimeout = setTimeout(() => {
@@ -789,14 +798,14 @@ startHintRotation();
 //Mobile anim trigger
 const logoStack = document.querySelector('.logo-stack');
 
-logoStack.addEventListener('touchstart', () => {
+logoStack.addEventListener('touchstart', (e) => {
     logoStack.classList.add('is-active');
 }, {passive: true});
 
 logoStack.addEventListener('touchend', () => {
     setTimeout(() => {
         logoStack.classList.remove('is-active');
-    }, 100);
+    }, 400);
 }, {passive: true});
 
 async function syncVersionFromSW() {

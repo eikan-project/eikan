@@ -131,7 +131,7 @@ header {
     font-weight: 400; 
     text-transform: uppercase;
     color: var(--text-sub); 
-    margin-top: 8px; 
+    margin-top: 15px; 
     margin-left: 0.5em; 
     z-index: 10;
     opacity: 0.7;
@@ -159,7 +159,8 @@ header {
     transform: rotateY(-10deg) translateZ(40px);
 }
 
-.logo-stack:hover .logo-card-under.first {
+.logo-stack:hover .logo-card-under.first,
+.logo-stack.is-active .logo-card-under.first {
     opacity: 0.9;
     width: 95%;
     transform:
@@ -170,7 +171,8 @@ header {
     box-shadow: var(--shadow-premium), 2px 4px 8px rgba(0,0,0,0.1);
 }
 
-.logo-stack:hover .logo-card-under.second {
+.logo-stack:hover .logo-card-under.second,
+.logo-stack.is-active .logo-card-under.second {
     opacity: 0.6;
     width: 90%;
     transform:
@@ -200,13 +202,14 @@ header {
 
 .search-wrapper {
     position: relative;
+    display: flex;
+    align-items: center;
     width: 100%;
     max-width: 520px;
 }
 
 .search-container input {
     width: 100%;
-    padding: 14px 20px;
     border-radius: 16px;
     border: 1px solid var(--border);
     background: white;
@@ -214,11 +217,12 @@ header {
     outline: none;
     box-shadow: var(--shadow-soft);
     transition: all 0.2s ease;
+    padding: 14px 48px 14px 20px !important;
 }
 
 .search-hint {
     position: absolute;
-    left: 20px;
+    left: 20px !important;
     top: 50%;
     transform: translateY(-50%);
     color: #9aa3af;
@@ -235,6 +239,20 @@ header {
 .search-container input:focus {
     border-color: var(--accent);
     box-shadow: 0 0 0 3px var(--accent-soft); 
+}
+
+.search-icon-svg {
+    position: absolute;
+    right: 18px;
+    color: #9aa3af;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    z-index: 10;
+}
+
+.search-icon-svg.hidden {
+    opacity: 0;
+    transform: translateX(10px);
 }
 
 .suggest-btn {
@@ -835,10 +853,6 @@ header {
 }
 
 @media (max-width: 880px) {
-
-    .brand-tagline{
-        margin-top:15px;
-    }
 
     .card-frame{
         transform: translateY(-0.11em);
