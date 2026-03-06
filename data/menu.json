@@ -1600,5 +1600,69 @@
     "context": "食器を片付ける際の確認に。",
     "keywords": "お下げしましょうか？, clear, take away, finish, plate, glass, 片付け, 下げる, 空いた",
     "verified": true
+  },
+  {
+    "jp": "アレルギーはお持ちですか？",
+    "en": "Do you have any food allergies?",
+    "tag": "Menu",
+    "context": "注文を伺う前に、アレルギーの有無を確認する際に。",
+    "keywords": "アレルギー, allergy, food allergies, health, check,アレルギー対応",
+    "verified": true
+  },
+  {
+    "jp": "重度の食物アレルギーには対応できません",
+    "en": "We cannot accommodate severe allergies",
+    "tag": "Menu",
+    "context": "アナフィラキシー等のリスクがある場合のお断りに。",
+    "keywords": "重度, severe, anaphylaxis, safety, notice,アレルギー,食物, アナフィラキシー,アレルギー対応",
+    "verified": true
+  },
+  {
+    "jp": "調理器具を共用しています",
+    "en": "We use shared cooking equipment",
+    "tag": "Menu",
+    "context": "同じ器具で別のアレルゲンを扱うことへの注意喚起。",
+    "keywords": "調理器具, utensils, shared, equipment, contamination,アレルギー対応,コンタミネーション,コンタミ",
+    "verified": true
+  },
+  {
+    "jp": "揚げ油を共用しています",
+    "en": "Shared fryer oil",
+    "tag": "Menu",
+    "context": "天ぷらや唐揚げなど、同じ油で揚げることへの注意。",
+    "keywords": "揚げ油, frying oil, shared, cross-contact, allergy,オイル,共用,コンタミ,コンタミネーション,アレルギー対応",
+    "verified": true
+  },
+  {
+    "jp": "微量混入の可能性があります",
+    "en": "Traces of allergens may be present",
+    "tag": "Menu",
+    "context": "コンタミネーションの可能性を伝える際に。",
+    "keywords": "微量混入, traces, cross-contamination, may contain,アレルギー対応,コンタミネーション,コンタミ,混入",
+    "verified": true
+  },
+  {
+    "jp": "原材料を確認いたします",
+    "en": "I will check the ingredients for you",
+    "tag": "Menu",
+    "context": "成分表示やレシピを確認しに席を離れる際に。",
+    "keywords": "原材料, ingredients, check, verify, labels,確認,アレルギー対応",
+    "verified": true
+  },
+  {
+    "jp": "すみません、アレルギー対応の代替品はありません",
+    "en": "I’m sorry, we don’t have any allergy-friendly substitutes",
+    "tag": "Menu",
+    "context": "代わりのメニューや食材が提供できない場合の案内に。",
+    "keywords": "代替品, alternatives, substitute, no options,アレルギー対応,代替品",
+    "verified": true
+  },
+  {
+    "jp": "この料理には_________が含まれています",
+    "en": "This dish contains _______",
+    "tag": "Menu",
+    "context": "特定のアレルゲンが含まれていることを明示する際に。",
+    "keywords": "含有, contains, include, ingredients, alert,アレルギー対応",
+    "verified": true
   }
 ]
